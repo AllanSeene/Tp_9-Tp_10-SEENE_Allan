@@ -10,10 +10,7 @@
         $result = $dbPDO->query($sql);
         $result->setFetchMode(PDO::FETCH_ASSOC);
         while ($row = $result->fetch()) {
-            echo $row['prenom'];
-            echo " ";
-            echo $row['nom'];
-            echo "<br>";
+            echo $row['prenom']. " ".$row['nom']. "<br>";
         }
     ?>
 
@@ -23,8 +20,7 @@
         $result = $dbPDO->query($sql);
         $result->setFetchMode(PDO::FETCH_ASSOC);
         while ($row = $result->fetch()) {
-            echo $row['libelle'];
-            echo "<br>";
+            echo $row['libelle']."<br>";
         }
     ?>
 
@@ -34,9 +30,6 @@
         $result = $dbPDO->query($sql);
         $result->setFetchMode(PDO::FETCH_ASSOC);
         while ($row = $result->fetch()) {
-            echo $row['prenom'];
-            echo " ";
-            echo $row['nom'];
-            echo "<br>";
+            echo $row['prenom']. " ".$row['nom']. "<br>";
         }
     ?>
